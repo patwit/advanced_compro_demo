@@ -2,11 +2,42 @@
  * Student
  */
 public class Student {
+// state
+    private String name; //instance variable
+    private double GPA;
+    static String school = "KKU";   //class variable  
 
-    // state
-    String name;
-    double GPA;
-    static String school = "KKU";     
+
+
+    public Student(){
+        this.name = "";
+        this.GPA = 0.0;
+    }   
+
+    public Student(String name, double GPA){
+        this.name = name;
+        this.GPA = GPA;
+    }
+
+    public Student(double GPA){
+        this.name = "No name";
+        this.GPA = GPA;
+    }
+
+
+    String getName(){
+        return name;
+    }
+    void setName(String name){
+        this.name = name;
+    }
+
+    double getGPA(){
+        return GPA;
+    }
+    void setGPA(double GPA){
+        this.GPA = GPA;
+    }
 
     //behavior
     static void hi(){

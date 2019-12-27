@@ -4,9 +4,27 @@
 public class RunExample {
 
     public static void main(String[] args) {
+
+        GradStudent s7 = new GradStudent();
+        s7.setName("Z");
+        System.out.println(s7.getName());
+        s7.setThesisTitle("AI is tking over the world.");
+        System.out.println(s7.getThesisTitle());
+
+        int x;
+        // Student s4 = new Student();
+        // s4.setName("C");
+        // s4.setGPA(2.10);
+
+        Student s4 = new Student("C", 2.10);
+        Student s5 = new Student(4.00);
+        Student s6 = new Student();
+
+
+
         Student s1 = new Student();
-        s1.name = "A";
-        s1.GPA = 3.75;
+        s1.setName("A");
+        System.out.println(s1.getName());
 
         System.out.println(s1.name);
         System.out.println(s1.GPA);
