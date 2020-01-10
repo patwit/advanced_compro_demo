@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RunExampleOOP",
+            "request": "launch",
+            "mainClass": "RunExampleOOP",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RunExample",
             "request": "launch",
             "mainClass": "RunExample",

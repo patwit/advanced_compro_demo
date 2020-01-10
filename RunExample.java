@@ -20,8 +20,6 @@ public class RunExample {
         Student s5 = new Student(4.00);
         Student s6 = new Student();
 
-        System.out.println("Hello");
-
 
 
         Student s1 = new Student();

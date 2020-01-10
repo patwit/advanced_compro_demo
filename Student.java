@@ -1,13 +1,11 @@
 /**
  * Student
  */
-public class Student {
+public class Student extends Person{
 // state
     private String name; //instance variable
     private double GPA;
     static String school = "KKU";   //class variable  
-
-
 
     public Student(){
         this.name = "";
@@ -28,6 +26,7 @@ public class Student {
     String getName(){
         return name;
     }
+
     void setName(String name){
         this.name = name;
     }
@@ -46,6 +45,17 @@ public class Student {
 
     void bye(){
         System.out.println(name + " say bye.");
+    }
+
+    @Override
+    public String toString(){
+        return name + " : " + GPA;
+    }
+
+    @Override
+    public String getNationality() {
+        // TODO Auto-generated method stub
+        return super.nationality + "(Student)";
     }
 
 
