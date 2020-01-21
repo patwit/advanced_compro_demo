@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Window2",
+            "request": "launch",
+            "mainClass": "Window2",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Window1",
+            "request": "launch",
+            "mainClass": "Window1",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HelloWorldGUI",
             "request": "launch",
             "mainClass": "HelloWorldGUI",
