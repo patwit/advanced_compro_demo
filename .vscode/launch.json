@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Windows4",
+            "request": "launch",
+            "mainClass": "Windows4",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Window3",
+            "request": "launch",
+            "mainClass": "Window3",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Window2",
             "request": "launch",
             "mainClass": "Window2",
