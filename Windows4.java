@@ -14,7 +14,6 @@ public class Windows4 extends Window3{
 
     public Windows4(String string) {
         super(string);
-        // TODO Auto-generated constructor stub
     }
 
     /**

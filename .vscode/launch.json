@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FirstHandler",
+            "request": "launch",
+            "mainClass": "FirstHandler",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FirstGUI",
+            "request": "launch",
+            "mainClass": "FirstGUI",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MySimpleWindowV2",
+            "request": "launch",
+            "mainClass": "MySimpleWindowV2",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MySimpleWindow",
+            "request": "launch",
+            "mainClass": "MySimpleWindow",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Window",
+            "request": "launch",
+            "mainClass": "Window",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Windows4",
             "request": "launch",
             "mainClass": "Windows4",
