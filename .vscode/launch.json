@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ItemHandler",
+            "request": "launch",
+            "mainClass": "ItemHandler",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ItemGUI",
+            "request": "launch",
+            "mainClass": "ItemGUI",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FirstHandler",
             "request": "launch",
             "mainClass": "FirstHandler",

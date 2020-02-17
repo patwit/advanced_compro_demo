@@ -8,16 +8,13 @@ import java.awt.GridLayout;
 /**
  * FirstHandler
  */
-public class FirstHandler extends FirstGUI implements ActionListener{
+public class FirstHandler extends FirstGUI 
+                          implements ActionListener{
 
     public FirstHandler(String string) {
         super(string);
-        // TODO Auto-generated constructor stub
     }
 
-    /**
-     *
-     */
     private static final long serialVersionUID = 1L;
 
     public static void main(String[] args) {
