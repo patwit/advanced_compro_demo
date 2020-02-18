@@ -8,8 +8,7 @@ import java.awt.GridLayout;
 /**
  * FirstHandler
  */
-public class FirstHandler extends FirstGUI 
-                          implements ActionListener{
+public class FirstHandler extends MouseAdapter{
 
     public FirstHandler(String string) {
         super(string);
@@ -38,18 +37,21 @@ public class FirstHandler extends FirstGUI
         cancelButton.addActionListener(this);
     }
 
-    @Override
+
     public void actionPerformed(ActionEvent e) {
-        if(e.getSource() == okButton){
-            
-        }
+
         if(e.getActionCommand().equals("OK")){
             String text = nameTF.getText() + "\n";
             output.append(text);
             nameTF.setText("");
-        } else { // Cancel button is pressed.
+        } else if (e.getSource() == cancelButton){ 
             nameTF.setText("");
             output.setText("");
         }
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        
     }
 }

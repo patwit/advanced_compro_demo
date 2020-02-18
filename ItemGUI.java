@@ -10,14 +10,15 @@ public class ItemGUI extends Window{
      *
      */
     private static final long serialVersionUID = 1L;
+
     
-    protected JPanel boxPanel, RBPanel, comboPanel, mainPanel;
     protected JCheckBox cPlusPlus, php, javascript, java;
     protected JRadioButton studentRB, teacherRB;
+    protected JPanel boxPanel, RBPanel, comboPanel, mainPanel;
     protected ButtonGroup buttonGroup;
-    String[] treasure = { "Gold", "Silver", "Diamonds", "Rubies", "Emeralds",
+    protected String[] treasure = { "Gold", "Silver", "Diamonds", "Rubies", "Emeralds",
       "Sapphires", "Chocolate" };
-    JComboBox combo;
+    protected JComboBox combo;
 
     public ItemGUI(String string) {
         super(string);
