@@ -16,6 +16,10 @@ public class ItemGUI extends Window{
     protected JRadioButton studentRB, teacherRB;
     protected JPanel boxPanel, RBPanel, comboPanel, mainPanel;
     protected ButtonGroup buttonGroup;
+    protected JMenuBar menuBar;
+    protected JMenu fileMenu;
+    protected JMenuItem openMenuItem, newMenuItem;
+
     protected String[] treasure = { "Gold", "Silver", "Diamonds", "Rubies", "Emeralds",
       "Sapphires", "Chocolate" };
     protected JComboBox combo;
@@ -35,7 +39,19 @@ public class ItemGUI extends Window{
     public static void createAndShowGUI() {
         ItemGUI window = new ItemGUI("Item GUI");
         window.addComponents();
+        window.addMenus();
         window.setFrameFeature();
+    }
+
+    protected void addMenus() {
+        openMenuItem = new JMenuItem("Open");
+        newMenuItem = new JMenuItem("New");
+        fileMenu = new JMenu("File");
+        fileMenu.add(openMenuItem);
+        fileMenu.add(newMenuItem);
+        menuBar = new JMenuBar();
+        menuBar.add(fileMenu);
+        setJMenuBar(menuBar);
     }
 
     @Override

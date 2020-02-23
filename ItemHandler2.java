@@ -5,7 +5,8 @@ import java.awt.event.*;
 /**
  * ItemHandler2
  */
-public class ItemHandler2 extends ItemGUI implements ItemListener{
+public class ItemHandler2 extends ItemGUI implements ItemListener, 
+                                                        ActionListener{
 
     /**
      *
@@ -14,7 +15,6 @@ public class ItemHandler2 extends ItemGUI implements ItemListener{
 
     public ItemHandler2(String string) {
         super(string);
-        // TODO Auto-generated constructor stub
     }
 
     public static void main(String[] args) {
@@ -28,8 +28,20 @@ public class ItemHandler2 extends ItemGUI implements ItemListener{
     public static void createAndShowGUI() {
         ItemHandler2 window = new ItemHandler2("Item Handler");
         window.addComponents();
+        window.addMenus();
+        window.addKeys();
         window.addListeners();
         window.setFrameFeature();
+    }
+
+    private void addKeys() {
+        openMenuItem.setMnemonic(KeyEvent.VK_O);
+        newMenuItem.setMnemonic(KeyEvent.VK_N);
+        fileMenu.setMnemonic(KeyEvent.VK_F);
+
+        openMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_O, ActionEvent.CTRL_MASK));
+        newMenuItem.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, ActionEvent.CTRL_MASK));
+
     }
 
     protected void addListeners() {
@@ -42,11 +54,28 @@ public class ItemHandler2 extends ItemGUI implements ItemListener{
         teacherRB.addItemListener(this);
 
         combo.addItemListener(this);
+
+        openMenuItem.addActionListener(this);
+        newMenuItem.addActionListener(this);
+        
+    }
+
+    public void actionPerformed(ActionEvent e) {
+        Object source = e.getSource();
+        if(source == openMenuItem)
+        {
+            JOptionPane.showMessageDialog(this, "Open");
+        } else if (source == newMenuItem){
+            JOptionPane.showMessageDialog(this, "New");
+        }
+       
     }
 
     @Override
     public void itemStateChanged(ItemEvent e) {
         Object source = e.getSource();
+        //getActionCommand
+        //getItemSelectable()
         if(source == cPlusPlus){
             if(e.getStateChange() == ItemEvent.SELECTED)
                 JOptionPane.showMessageDialog(this, "C++ is pressed");
