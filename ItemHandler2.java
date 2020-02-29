@@ -34,7 +34,7 @@ public class ItemHandler2 extends ItemGUI implements ItemListener,
         window.setFrameFeature();
     }
 
-    private void addKeys() {
+    protected  void addKeys() {
         openMenuItem.setMnemonic(KeyEvent.VK_O);
         newMenuItem.setMnemonic(KeyEvent.VK_N);
         fileMenu.setMnemonic(KeyEvent.VK_F);
