@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExceptionExample",
+            "request": "launch",
+            "mainClass": "ExceptionExample",
+            "projectName": "Examples_10cec20b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ItemHandler3",
             "request": "launch",
             "mainClass": "ItemHandler3",
