@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TestS2",
+            "request": "launch",
+            "mainClass": "TestS2",
+            "projectName": "advanced_compro_demo_84e5753"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestS",
+            "request": "launch",
+            "mainClass": "TestS",
+            "projectName": "advanced_compro_demo_84e5753"
+        },
+        {
+            "type": "java",
+            "name": "Launch TestStudent",
+            "request": "launch",
+            "mainClass": "TestStudent",
+            "projectName": "advanced_compro_demo_84e5753"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ExceptionExample",
             "request": "launch",
             "mainClass": "ExceptionExample",

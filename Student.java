@@ -1,62 +1,62 @@
 /**
  * Student
  */
-public class Student extends Person{
+public class Student {
 // state
     private String name; //instance variable
     private double GPA;
-    static String school = "KKU";   //class variable  
+    static String school = "KKU";   //class variable
+    static int numberOfStudent = 0;
 
     public Student(){
         this.name = "";
         this.GPA = 0.0;
+        numberOfStudent++;
     }   
 
     public Student(String name, double GPA){
         this.name = name;
         this.GPA = GPA;
+        numberOfStudent++;
     }
 
     public Student(double GPA){
         this.name = "No name";
         this.GPA = GPA;
+        numberOfStudent++;
     }
 
 
-    String getName(){
+    public String getName(){
         return name;
     }
 
-    void setName(String name){
+    public void setName(String name){
         this.name = name;
     }
 
-    double getGPA(){
+    public double getGPA(){
         return GPA;
     }
-    void setGPA(double GPA){
+    
+    public void setGPA(double GPA){
         this.GPA = GPA;
     }
 
-    //behavior
-    static void hi(){
-        System.out.println("KKU hi");
+    public String getSchool(){
+        return school;
     }
 
-    void bye(){
-        System.out.println(name + " say bye.");
+    public static void setSchool(String school2){
+        school = school2;
+    }
+
+    public static int getNumberOfStudent(){
+        return numberOfStudent;
     }
 
     @Override
     public String toString(){
-        return name + " : " + GPA;
+        return "Name:"+name + " GPA:"+GPA;
     }
-
-    @Override
-    public String getNationality() {
-        // TODO Auto-generated method stub
-        return super.nationality + "(Student)";
-    }
-
-
 }
