@@ -1,0 +1,38 @@
+Review : 
+1. Declaring / Creating objetcs
+2. Access Modifiers private, protected,  , public
+3. Encapsulation
+3. Constructors
+4. toString()
+
+Today:
+1. Inheritance
+    1.1 subclass
+    1.2 super class
+    1.3 sibling class
+    1.3 Access Modifiers
+    1.4 Inherited Variables and Methods
+
+    Example 
+    Student
+    - name
+    - numberOfStudents (static)
+    -----
+    + getter
+    + setter
+    + getNumber
+    + toString
+
+    UniversityStudent extends Student
+    - year
+    ------
+    + getter
+    + setter
+    + toString
+
+    HighSchoolStudent extends Student
+    - int grade
+    -------
+    + getter
+    + setter
+    + toString
