@@ -2,6 +2,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MyWindow_2",
+            "request": "launch",
+            "mainClass": "MyWindow_2",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
+            "name": "MyWindow2",
+            "request": "launch",
+            "mainClass": "MyWindow2",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
+            "name": "MyWindow",
+            "request": "launch",
+            "mainClass": "MyWindow",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
+            "name": "Window2",
+            "request": "launch",
+            "mainClass": "Window2",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
+            "name": "Window1",
+            "request": "launch",
+            "mainClass": "Window1",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorldWindow",
+            "request": "launch",
+            "mainClass": "HelloWorldWindow",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
+            "name": "Driver3",
+            "request": "launch",
+            "mainClass": "Driver3",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
             "name": "Launch TestS2",
             "request": "launch",
             "mainClass": "TestS2",
