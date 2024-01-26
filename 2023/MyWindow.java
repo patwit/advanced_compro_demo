@@ -18,20 +18,20 @@ public class MyWindow extends JFrame{
         });
     }
 
-    public static void createAndShowGUI() {
+    protected static void createAndShowGUI() {
         MyWindow myWindow = new MyWindow("Pattarawit Window");
         myWindow.addComponents();
         myWindow.setFrameFeature();
     }
 
-    public void setFrameFeature() {
+    protected void setFrameFeature() {
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
-    public void addComponents() {
+    protected void addComponents() {
         resetButton = new JButton("Reset");
         cancelButton = new JButton("Cancel");
         okButton = new JButton("OK");
