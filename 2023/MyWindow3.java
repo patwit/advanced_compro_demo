@@ -47,6 +47,7 @@ public class MyWindow3 extends MyWindow2{
         jScrollPane = new JScrollPane(ta);
         midPanel = new JPanel();
         midPanel.add(jScrollPane);
+        //midPanel.add(ta);
 
         mainPanel.add(midPanel, BorderLayout.CENTER);
     }

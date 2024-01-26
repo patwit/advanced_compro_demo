@@ -29,7 +29,7 @@ public class MyWindow4 extends MyWindow3{
 
     public void addComponents() {
         super.addComponents();
-        maleCB = new JCheckBox("Male");
+        maleCB = new JCheckBox("Male", true);
         femalCB = new JCheckBox("Female");
         unCB = new JCheckBox("Unidentify");
         checkBoxPanel = new JPanel();
@@ -45,7 +45,7 @@ public class MyWindow4 extends MyWindow3{
         radioButtonPanel = new JPanel();
         programmingLabel = new JLabel("Programming : ");
         radiButtonGroup = new ButtonGroup();
-        javRadioButton = new JRadioButton("Java");
+        javRadioButton = new JRadioButton("Java", true);
         pythRadioButton = new JRadioButton("Python");
         cppRadioButton = new JRadioButton("C++");
         radiButtonGroup.add(javRadioButton);
