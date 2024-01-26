@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MyWindow4",
+            "request": "launch",
+            "mainClass": "MyWindow4",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
+            "name": "MyWindow3",
+            "request": "launch",
+            "mainClass": "MyWindow3",
+            "projectName": "advanced_compro_demo_cd649a40"
+        },
+        {
+            "type": "java",
             "name": "MyWindow_2",
             "request": "launch",
             "mainClass": "MyWindow_2",
