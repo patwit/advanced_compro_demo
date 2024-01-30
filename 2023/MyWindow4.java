@@ -27,7 +27,7 @@ public class MyWindow4 extends MyWindow3{
         myWindow.setFrameFeature();
     }
 
-    public void addComponents() {
+    protected void addComponents() {
         super.addComponents();
         maleCB = new JCheckBox("Male", true);
         femalCB = new JCheckBox("Female");

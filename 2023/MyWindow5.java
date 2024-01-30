@@ -25,7 +25,7 @@ public class MyWindow5 extends MyWindow4{
         myWindow.setFrameFeature();
     }
 
-    public void addComponents() {
+    protected void addComponents() {
         super.addComponents();
 
         topPanel.removeAll();

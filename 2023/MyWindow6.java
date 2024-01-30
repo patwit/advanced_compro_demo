@@ -25,7 +25,7 @@ public class MyWindow6 extends MyWindow5{
     }
 
 
-    public void addComponents() {
+    protected void addComponents() {
         super.addComponents();
 
         buttonPanel2 = new JPanel(new BorderLayout());

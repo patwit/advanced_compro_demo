@@ -1,5 +1,4 @@
 import java.awt.*;
-import java.awt.GridLayout;
 
 import javax.swing.*;
 
@@ -27,7 +26,7 @@ public class MyWindow2 extends MyWindow{
         myWindow.setFrameFeature();
     }
 
-    public void addComponents() {
+    protected void addComponents() {
         super.addComponents();
         nameLabel = new JLabel("Name : ");
         nameTextField = new JTextField(10);
