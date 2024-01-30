@@ -43,11 +43,15 @@ public class MyWindow8 extends MyWindow7{
         editMenu.add(myNewMenu);
     }
 
+    @Override
     protected void addComponents(){
         super.addComponents();
 
-        nameLabel.setForeground(Color.RED);
-        nameTextField.setBackground(Color.BLUE);
+        nameLabel.setForeground(new Color(167, 59, 36));
+        nameTextField.setBackground(new Color(167, 59, 36));
+        nameTextField.setForeground(Color.GREEN);
         nameLabel.setFont(new Font("SanSarif", Font.BOLD, 20));
+        okButton.setBackground(Color.magenta);
+        programmingLabel.setFont(new Font("Serif"))
     }
 }
