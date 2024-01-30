@@ -24,7 +24,7 @@ public class MyWindow6 extends MyWindow5{
         myWindow.setFrameFeature();
     }
 
-
+    @Override
     protected void addComponents() {
         super.addComponents();
 

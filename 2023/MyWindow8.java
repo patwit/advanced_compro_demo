@@ -2,11 +2,14 @@ import java.awt.Color;
 import java.awt.Font;
 
 import javax.swing.ImageIcon;
+import javax.swing.JMenuItem;
 import javax.swing.SwingUtilities;
 
 public class MyWindow8 extends MyWindow7{
 
-    ImageIcon newFileIcon, newFolderIcon;
+    ImageIcon newFileIcon, newFolderIcon, copyIcon;
+    JMenuItem myNewMenu;
+
     public MyWindow8(String string) {
         super(string);
     }
@@ -26,12 +29,18 @@ public class MyWindow8 extends MyWindow7{
         myWindow.setFrameFeature();
     }
 
+    @Override
     protected void addMenus(){
         super.addMenus();
         newFileIcon = new ImageIcon(this.getClass().getResource("new.png"));
         newFolderIcon = new ImageIcon(this.getClass().getResource("newFolder.png"));
+        copyIcon = new ImageIcon(this.getClass().getResource("copyIcon.png"));
         newFile.setIcon(newFileIcon);
         newFolder.setIcon(newFolderIcon);
+        exitMenu.setIcon(newFileIcon);
+
+        myNewMenu = new JMenuItem("My New Menu", copyIcon);
+        editMenu.add(myNewMenu);
     }
 
     protected void addComponents(){
